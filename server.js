@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/thoughts/', require('./server/routes/thoughts-route'));
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: __dirname + '/client/build/' });
+  res.sendFile('index.html', { root: __dirname + '/client/mern_azure_example/build/' });
 });
 
 const { PORT } = process.env;
